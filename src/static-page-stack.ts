@@ -77,6 +77,7 @@ export class StaticPageStack extends cdk.Stack {
       destinationBucket: websiteBucket,
       distribution,
       distributionPaths: ["/*"],
+      outputObjectKeys: false,
     });
   }
 }
